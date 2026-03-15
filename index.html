@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mololuwa Ajayi — Tech Content Writer</title>
+<title>Mololuwa Ajayi, Tech Content Writer</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -14,9 +14,7 @@
   --terra: #c4612a;
   --terra-light: #e8845a;
   --terra-pale: #f5ddd0;
-  --honey: #d4940a;
   --honey-light: #f2c84b;
-  --sage: #7a8c6e;
   --brown: #3d2b1f;
   --brown-mid: #6b4c35;
   --brown-light: #a07055;
@@ -30,7 +28,7 @@ nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; justify-content: space-between; align-items: center;
   padding: 1.1rem 5%;
-  background: rgba(253,246,236,0.9); backdrop-filter: blur(16px);
+  background: rgba(253,246,236,0.92); backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--parchment);
 }
 .nav-logo { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.2rem; color: var(--terra); font-style: italic; }
@@ -40,10 +38,7 @@ nav {
 .nav-links a:hover { color: var(--terra); }
 .nav-links a:hover::after { transform: scaleX(1); }
 
-.hero {
-  min-height: 100vh; display: grid; grid-template-columns: 1.1fr 0.9fr;
-  padding: 0 5%; padding-top: 5.5rem; position: relative; overflow: hidden; background: var(--cream);
-}
+.hero { min-height: 100vh; display: grid; grid-template-columns: 1.1fr 0.9fr; padding: 0 5%; padding-top: 5.5rem; position: relative; overflow: hidden; background: var(--cream); }
 .hero-deco { position: absolute; font-family: 'Playfair Display', serif; font-style: italic; font-size: 8rem; font-weight: 900; color: rgba(196,97,42,0.045); line-height: 1; user-select: none; pointer-events: none; }
 .hero-deco-1 { top: 12%; right: 0; }
 .hero-deco-2 { bottom: 18%; left: 1%; }
@@ -55,7 +50,7 @@ nav {
 h1.hero-name { font-family: 'Playfair Display', serif; font-size: clamp(3.2rem, 6vw, 5.8rem); font-weight: 900; line-height: 1.0; letter-spacing: -0.02em; color: var(--brown); margin-bottom: 0.6rem; }
 h1.hero-name em { font-style: italic; color: var(--terra); }
 .hero-title { font-size: 0.98rem; color: var(--muted); font-weight: 400; margin-bottom: 1.8rem; }
-.hero-bio { font-size: 1.02rem; line-height: 1.85; color: var(--brown-mid); max-width: 460px; margin-bottom: 2.5rem; }
+.hero-bio { font-size: 1.02rem; line-height: 1.9; color: var(--brown-mid); max-width: 460px; margin-bottom: 2.5rem; }
 .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
 .btn-primary { background: var(--terra); color: #fff; padding: 0.9rem 2.2rem; border-radius: 100px; text-decoration: none; font-weight: 700; font-size: 0.88rem; transition: transform 0.2s, background 0.2s; box-shadow: 0 4px 20px rgba(196,97,42,0.22); }
 .btn-primary:hover { transform: translateY(-2px); background: var(--terra-light); }
@@ -83,9 +78,9 @@ section { padding: 6rem 5%; position: relative; }
 
 #about { background: var(--cream2); }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4.5rem; align-items: start; }
-.about-text p { color: var(--brown-mid); line-height: 1.9; font-size: 1rem; margin-bottom: 1.3rem; }
+.about-text p { color: var(--brown-mid); line-height: 1.95; font-size: 1rem; margin-bottom: 1.3rem; }
 .about-text p strong { color: var(--brown); font-weight: 700; }
-.about-pull { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-style: italic; color: var(--terra); line-height: 1.5; border-left: 3px solid var(--terra-pale); padding-left: 1.5rem; margin: 2rem 0; }
+.about-pull { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-style: italic; color: var(--terra); line-height: 1.6; border-left: 3px solid var(--terra-pale); padding-left: 1.5rem; margin: 2rem 0; }
 .about-highlights { display: flex; flex-direction: column; gap: 1.2rem; }
 .highlight-item { background: var(--cream); border: 1px solid var(--parchment); border-radius: 16px; padding: 1.5rem; transition: border-color 0.25s, transform 0.25s; }
 .highlight-item:hover { border-color: var(--terra-light); transform: translateX(4px); }
@@ -115,24 +110,37 @@ section { padding: 6rem 5%; position: relative; }
 .portfolio-card.featured-card { grid-column: span 2; background: var(--brown); border-color: var(--brown); }
 .portfolio-card.featured-card .card-category { color: var(--honey-light); }
 .portfolio-card.featured-card h3 { color: #fff; }
-.portfolio-card.featured-card p { color: rgba(255,255,255,0.62); }
+.portfolio-card.featured-card p { color: rgba(255,255,255,0.65); }
 .portfolio-card.featured-card .tag { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.18); color: rgba(255,255,255,0.65); }
+.portfolio-card.featured-card .card-link { color: var(--honey-light); }
 .card-category { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--terra); margin-bottom: 0.9rem; font-weight: 700; }
 .portfolio-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; line-height: 1.35; margin-bottom: 0.9rem; color: var(--brown); }
 .portfolio-card.featured-card h3 { font-size: 1.45rem; }
-.portfolio-card p { color: var(--muted); font-size: 0.86rem; line-height: 1.8; flex: 1; margin-bottom: 1.5rem; }
-.card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
+.portfolio-card p { color: var(--muted); font-size: 0.86rem; line-height: 1.85; flex: 1; margin-bottom: 1rem; }
+.card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1rem; }
 .card-tags { display: flex; gap: 6px; flex-wrap: wrap; }
 .tag { background: var(--cream2); border: 1px solid var(--parchment); padding: 3px 10px; border-radius: 100px; font-size: 0.68rem; color: var(--brown-light); font-weight: 600; }
-.card-link { color: var(--terra); text-decoration: none; font-size: 0.8rem; font-weight: 700; display: flex; align-items: center; gap: 4px; transition: gap 0.2s; white-space: nowrap; }
+.card-link { color: var(--terra); text-decoration: none; font-size: 0.8rem; font-weight: 700; display: flex; align-items: center; gap: 4px; transition: gap 0.2s; white-space: nowrap; cursor: pointer; background: none; border: none; font-family: 'Nunito', sans-serif; }
 .card-link:hover { gap: 8px; }
 .portfolio-card.hidden { display: none; }
+
+/* MODAL */
+.modal-overlay { display: none; position: fixed; inset: 0; z-index: 999; background: rgba(42,31,21,0.72); align-items: center; justify-content: center; padding: 2rem; }
+.modal-overlay.open { display: flex; }
+.modal-box { background: var(--cream); border-radius: 24px; max-width: 680px; width: 100%; max-height: 88vh; overflow-y: auto; padding: 3rem; position: relative; }
+.modal-close { position: absolute; top: 1.5rem; right: 1.5rem; background: var(--terra-pale); border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 1rem; cursor: pointer; color: var(--terra); font-weight: 700; display: flex; align-items: center; justify-content: center; transition: background 0.2s, color 0.2s; }
+.modal-close:hover { background: var(--terra); color: #fff; }
+.modal-cat { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--terra); margin-bottom: 0.8rem; font-weight: 700; }
+.modal-title { font-family: 'Playfair Display', serif; font-size: 1.55rem; font-weight: 900; color: var(--brown); line-height: 1.25; margin-bottom: 1.8rem; }
+.modal-body p { color: var(--brown-mid); line-height: 2.0; font-size: 1.02rem; margin-bottom: 1.4rem; font-weight: 400; }
+.modal-body p:last-child { margin-bottom: 0; }
+.modal-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--parchment); }
 
 #contact { background: var(--cream); }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4.5rem; align-items: start; }
 .contact-left h2 { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4.5vw, 3.5rem); font-weight: 900; line-height: 1.1; color: var(--brown); margin-bottom: 1.2rem; }
 .contact-left h2 em { font-style: italic; color: var(--terra); }
-.contact-left p { color: var(--muted); line-height: 1.8; margin-bottom: 2rem; font-size: 0.95rem; }
+.contact-left p { color: var(--muted); line-height: 1.85; margin-bottom: 2rem; font-size: 0.95rem; }
 .contact-links { display: flex; flex-direction: column; gap: 0.9rem; }
 .contact-link { display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--brown); background: var(--cream2); border: 1px solid var(--parchment); padding: 1rem 1.25rem; border-radius: 14px; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; }
 .contact-link:hover { border-color: var(--terra-light); transform: translateX(4px); box-shadow: 0 4px 16px rgba(196,97,42,0.1); }
@@ -148,6 +156,9 @@ section { padding: 6rem 5%; position: relative; }
 .form-group textarea { resize: vertical; min-height: 120px; }
 .form-submit { width: 100%; background: var(--terra); color: #fff; border: none; padding: 1rem; border-radius: 10px; font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; font-style: italic; cursor: pointer; transition: background 0.2s, transform 0.2s; margin-top: 0.5rem; }
 .form-submit:hover { background: var(--terra-light); transform: translateY(-1px); }
+.form-msg { display: none; text-align: center; padding: 0.8rem; border-radius: 10px; font-size: 0.9rem; margin-top: 1rem; font-weight: 600; }
+.form-msg.success { background: #eaf6e4; color: #3a6b2a; display: block; }
+.form-msg.error { background: #fde8e8; color: #a02020; display: block; }
 
 footer { padding: 2rem 5%; background: var(--brown); display: flex; justify-content: space-between; align-items: center; }
 .footer-logo { font-family: 'Playfair Display', serif; font-weight: 900; font-style: italic; color: var(--terra-pale); font-size: 1.1rem; }
@@ -161,6 +172,7 @@ footer p { color: rgba(255,255,255,0.32); font-size: 0.78rem; }
   .portfolio-grid { grid-template-columns: 1fr; }
   .portfolio-card.featured-card { grid-column: span 1; }
   .nav-links { display: none; }
+  .modal-box { padding: 2rem; }
 }
 @media (max-width: 600px) {
   .services-grid { grid-template-columns: 1fr; }
@@ -184,11 +196,11 @@ footer p { color: rgba(255,255,255,0.32); font-size: 0.78rem; }
   <div class="hero-deco hero-deco-1">write.</div>
   <div class="hero-deco hero-deco-2">tell.</div>
   <div class="hero-left">
-    <div class="hero-badge"><span></span> Available for internships &amp; freelance</div>
+    <div class="hero-badge"><span></span> Available for internships and freelance</div>
     <p class="hero-greeting">Hello, I'm</p>
     <h1 class="hero-name">Mololuwa<br><em>Ajayi.</em></h1>
-    <p class="hero-title">Tech Content Writer &amp; Digital Storyteller &nbsp;·&nbsp; Lagos, Nigeria</p>
-    <p class="hero-bio">I translate complex technology into words that move people. From Web3 and AI to EdTech and startups — I write content that informs, engages, and stays with your audience long after they've read it.</p>
+    <p class="hero-title">Tech Content Writer and Digital Storyteller &nbsp;·&nbsp; Lagos, Nigeria</p>
+    <p class="hero-bio">I translate complex technology into words that move people. From Web3 and AI to EdTech and startups, I write content that informs, engages, and stays with your audience long after they have read it.</p>
     <div class="hero-cta">
       <a href="#portfolio" class="btn-primary">See My Work</a>
       <a href="#contact" class="btn-outline">Let's Talk</a>
@@ -198,18 +210,18 @@ footer p { color: rgba(255,255,255,0.32); font-size: 0.78rem; }
     <div class="hero-card-stack">
       <div class="hcard hcard-1">
         <div class="hcard-label">Niche</div>
-        <div class="hcard-val">Tech &amp; Web3</div>
-        <div class="hcard-sub">Africa · AI · Startups · EdTech</div>
+        <div class="hcard-val">Tech and Web3</div>
+        <div class="hcard-sub">Africa, AI, Startups, EdTech</div>
       </div>
       <div class="hcard hcard-2">
         <div class="hcard-label">Published Work</div>
         <div class="hcard-val">9 Pieces</div>
-        <div class="hcard-sub">Medium · Substack · GeekHub</div>
+        <div class="hcard-sub">Medium, Substack, GeekHub</div>
       </div>
       <div class="hcard hcard-3">
         <div class="hcard-label">Based In</div>
         <div class="hcard-val">Lagos 🇳🇬</div>
-        <div class="hcard-sub">Remote-ready worldwide</div>
+        <div class="hcard-sub">Remote ready worldwide</div>
       </div>
     </div>
   </div>
@@ -220,26 +232,26 @@ footer p { color: rgba(255,255,255,0.32); font-size: 0.78rem; }
   <div class="section-label">About Me</div>
   <div class="about-grid">
     <div class="about-text">
-      <p>I'm <strong>Mololuwa Ajayi</strong> — a tech content writer and digital storyteller who believes technology is only as powerful as the words used to explain it. Based in Lagos, I write at the intersection of <strong>technology, education, and human experience.</strong></p>
-      <div class="about-pull">"I don't just write words — I craft experiences that inform, connect, and stick."</div>
-      <p>Whether I'm breaking down how Web3 could reshape Africa's digital economy, or explaining why AI is a creative partner rather than a threat — I make complex ideas feel <strong>accessible, relevant, and alive.</strong></p>
-      <p>With a background in psychology and communication strategy, I understand what makes people read, share, and remember content. I've written for newsletters, digital publications, and educational platforms — bringing curiosity, empathy, and craft to every brief.</p>
+      <p>I am <strong>Mololuwa Ajayi,</strong> a tech content writer and digital storyteller who believes technology is only as powerful as the words used to explain it. Based in Lagos, I write at the intersection of <strong>technology, education, and human experience.</strong></p>
+      <div class="about-pull">"I do not just write words. I craft experiences that inform, connect, and stick."</div>
+      <p>Whether I am breaking down how Web3 could reshape Africa's digital economy or explaining why AI is a creative partner rather than a threat, I make complex ideas feel <strong>accessible, relevant, and alive.</strong></p>
+      <p>With a background in psychology and communication strategy, I understand what makes people read, share, and remember content. I have written for newsletters, digital publications, and educational platforms, bringing curiosity, empathy, and craft to every brief.</p>
     </div>
     <div class="about-highlights">
       <div class="highlight-item">
         <div class="highlight-icon">✍🏾</div>
         <h4>Tech Writing</h4>
-        <p>Web3, AI, startups, EdTech — I turn the complex into content that non-technical audiences genuinely enjoy reading.</p>
+        <p>Web3, AI, startups, EdTech. I turn complex ideas into content that non-technical audiences genuinely enjoy reading.</p>
       </div>
       <div class="highlight-item">
         <div class="highlight-icon">🎯</div>
         <h4>Strategic Storytelling</h4>
-        <p>Every piece is rooted in empathy and purpose — built to serve a goal, reach the right people, and leave an impression.</p>
+        <p>Every piece is rooted in empathy and purpose, built to serve a goal, reach the right people, and leave an impression.</p>
       </div>
       <div class="highlight-item">
         <div class="highlight-icon">🌍</div>
         <h4>African Digital Context</h4>
-        <p>I write with intimate knowledge of Africa's tech landscape — bringing local nuance to global conversations.</p>
+        <p>I write with intimate knowledge of Africa's tech landscape, bringing local nuance to global conversations.</p>
       </div>
     </div>
   </div>
@@ -248,43 +260,43 @@ footer p { color: rgba(255,255,255,0.32); font-size: 0.78rem; }
 <section id="services">
   <div class="section-label">What I Offer</div>
   <h2 class="section-title">Writing services built<br>for the <em>digital age.</em></h2>
-  <p class="section-sub">From long-form tech articles to sharp UX copy — I deliver content that serves your brand, your audience, and your goals.</p>
+  <p class="section-sub">From long-form tech articles to sharp UX copy, I deliver content that serves your brand, your audience, and your goals.</p>
   <div class="services-grid">
     <div class="service-card featured">
       <div class="service-num">01</div>
-      <h3>Tech &amp; Blog Writing</h3>
+      <h3>Tech and Blog Writing</h3>
       <p>In-depth articles, explainers, and thought leadership on AI, Web3, startups, and emerging technology. Written for humans, not just search engines.</p>
       <span class="service-tag">★ Most Requested</span>
     </div>
     <div class="service-card">
       <div class="service-num">02</div>
-      <h3>UX &amp; Educational Writing</h3>
+      <h3>UX and Educational Writing</h3>
       <p>Onboarding copy, tutorials, product documentation, and explainers that make complex tools easy and enjoyable to understand.</p>
-      <span class="service-tag">Practical · Clear</span>
+      <span class="service-tag">Practical and Clear</span>
     </div>
     <div class="service-card">
       <div class="service-num">03</div>
       <h3>Newsletter Writing</h3>
-      <p>Engaging editions that keep readers coming back — witty, informative, and written in a voice that builds loyal, returning audiences.</p>
-      <span class="service-tag">Retention-Focused</span>
+      <p>Engaging editions that keep readers coming back, written in a voice that is witty, informative, and builds loyal returning audiences over time.</p>
+      <span class="service-tag">Retention Focused</span>
     </div>
     <div class="service-card">
       <div class="service-num">04</div>
       <h3>Social Impact Writing</h3>
-      <p>Narratives that advocate, inspire, and move people to act — from climate essays to community-driven stories with emotional depth.</p>
-      <span class="service-tag">Purpose-Driven</span>
+      <p>Narratives that advocate, inspire, and move people to act. From climate essays to community-driven stories filled with emotional depth.</p>
+      <span class="service-tag">Purpose Driven</span>
     </div>
     <div class="service-card">
       <div class="service-num">05</div>
-      <h3>Copywriting &amp; Brand Voice</h3>
-      <p>Website copy, taglines, and marketing content that captures your identity and converts readers into customers and believers.</p>
-      <span class="service-tag">Conversion-Ready</span>
+      <h3>Copywriting and Brand Voice</h3>
+      <p>Website copy, taglines, and marketing content that captures your identity and turns readers into customers and believers in what you do.</p>
+      <span class="service-tag">Conversion Ready</span>
     </div>
     <div class="service-card">
       <div class="service-num">06</div>
-      <h3>Editing &amp; Content Strategy</h3>
-      <p>Proofreading, structural editing, and content planning — helping brands produce consistent, high-quality written output at scale.</p>
-      <span class="service-tag">Detail-Oriented</span>
+      <h3>Editing and Content Strategy</h3>
+      <p>Proofreading, structural editing, and content planning that helps brands produce consistent, high-quality written output at scale.</p>
+      <span class="service-tag">Detail Oriented</span>
     </div>
   </div>
 </section>
@@ -295,36 +307,39 @@ footer p { color: rgba(255,255,255,0.32); font-size: 0.78rem; }
   <p class="section-sub">A selection of published writing across tech, education, and social impact.</p>
   <div class="portfolio-filter">
     <button class="filter-btn active" onclick="filterPortfolio('all',this)">All Work</button>
-    <button class="filter-btn" onclick="filterPortfolio('tech',this)">Tech &amp; Web3</button>
+    <button class="filter-btn" onclick="filterPortfolio('tech',this)">Tech and Web3</button>
     <button class="filter-btn" onclick="filterPortfolio('ux',this)">UX Writing</button>
     <button class="filter-btn" onclick="filterPortfolio('impact',this)">Social Impact</button>
   </div>
   <div class="portfolio-grid" id="portfolioGrid">
 
     <div class="portfolio-card featured-card" data-cat="tech">
-      <div class="card-category">Tech Essay · Featured</div>
+      <div class="card-category">Tech Essay, Featured</div>
       <h3>Africa's Next Digital Leap Might Be Built on Web3</h3>
-      <p>For decades, Africa has leapfrogged entire systems rather than slowly adopting innovations developed elsewhere. Mobile money proved it. Now, decentralized technology could unlock a new generation of creators and developers. This essay explores why Web3 may not just arrive in Africa — it may thrive here in ways the rest of the world did not anticipate.</p>
+      <p>For decades, Africa has leapfrogged entire systems rather than slowly adopting innovations developed elsewhere. Mobile money proved it. Now decentralized technology could unlock a new generation of creators and developers. This essay explores why Web3 may not just arrive in Africa. It may thrive here in ways the rest of the world did not anticipate.</p>
       <div class="card-footer">
         <div class="card-tags"><span class="tag">Web3</span><span class="tag">Africa</span><span class="tag">Blockchain</span><span class="tag">Fintech</span></div>
+        <button class="card-link" onclick="openArticle('web3')">Read full essay →</button>
       </div>
     </div>
 
     <div class="portfolio-card" data-cat="tech">
       <div class="card-category">Tech Essay</div>
       <h3>AI Is Not Replacing Humans. It Is Changing What It Means to Be One at Work.</h3>
-      <p>AI replaces tasks, not people. Those who learn to work alongside it will become more valuable, not obsolete — a case for curiosity over fear.</p>
+      <p>AI replaces tasks, not people. Those who learn to work alongside it will become more valuable, not obsolete. A case for curiosity over fear.</p>
       <div class="card-footer">
         <div class="card-tags"><span class="tag">AI</span><span class="tag">Future of Work</span></div>
+        <button class="card-link" onclick="openArticle('ai')">Read full essay →</button>
       </div>
     </div>
 
     <div class="portfolio-card" data-cat="tech">
       <div class="card-category">Tech Essay</div>
       <h3>Why Startups Often Change the World While Big Companies Move Slowly</h3>
-      <p>Large organizations protect what they have. Startups have something more powerful — freedom to experiment. A sharp look at why small teams with big questions reshape entire industries.</p>
+      <p>Large organizations protect what they have. Startups have something more powerful, which is the freedom to experiment. A look at why small teams with big questions reshape entire industries.</p>
       <div class="card-footer">
         <div class="card-tags"><span class="tag">Startups</span><span class="tag">Innovation</span></div>
+        <button class="card-link" onclick="openArticle('startups')">Read full essay →</button>
       </div>
     </div>
 
@@ -334,74 +349,146 @@ footer p { color: rgba(255,255,255,0.32); font-size: 0.78rem; }
       <p>The internet became powerful because it connected human beings across distance. A reflection on why every major digital breakthrough succeeds by solving a human need, not a technical one.</p>
       <div class="card-footer">
         <div class="card-tags"><span class="tag">Technology</span><span class="tag">Humanity</span></div>
+        <button class="card-link" onclick="openArticle('people')">Read full essay →</button>
       </div>
     </div>
 
     <div class="portfolio-card" data-cat="ux">
       <div class="card-category">UX Writing</div>
-      <h3>Why Websites Use Cookies — And When You Should Say Yes</h3>
-      <p>A beginner-friendly guide to understanding website cookies — what they do, how they affect your experience, and how to manage them. Plain language for everyday users.</p>
+      <h3>Why Websites Use Cookies, And When You Should Say Yes</h3>
+      <p>A beginner-friendly guide to understanding website cookies, what they do, how they affect your experience, and how to manage them. Plain language for everyday users.</p>
       <div class="card-footer">
         <div class="card-tags"><span class="tag">UX Writing</span><span class="tag">EdTech</span></div>
-        <a href="https://medium.com/@mololuwaajayi7/why-websites-use-cookies-and-when-you-should-say-yes-7cc413cd9c86" target="_blank" class="card-link">Read →</a>
+        <a href="https://medium.com/@mololuwaajayi7/why-websites-use-cookies-and-when-you-should-say-yes-7cc413cd9c86" target="_blank" class="card-link">Read on Medium →</a>
       </div>
     </div>
 
     <div class="portfolio-card" data-cat="ux">
-      <div class="card-category">UX Writing · Tutorial</div>
+      <div class="card-category">UX Writing, Tutorial</div>
       <h3>How to Set Up Two-Factor Authentication on WhatsApp</h3>
-      <p>A step-by-step, plain-language tutorial helping everyday users secure their WhatsApp accounts. Practical, clear, and completely jargon-free.</p>
+      <p>A step-by-step tutorial helping everyday users secure their WhatsApp accounts. Practical, clear, and completely jargon-free so anyone can follow along.</p>
       <div class="card-footer">
         <div class="card-tags"><span class="tag">Tutorial</span><span class="tag">Security</span></div>
-        <a href="https://medium.com/@mololuwaajayi7/how-to-set-up-two-factor-authentication-2fa-on-your-whatsapp-account-aa1c5cca29af" target="_blank" class="card-link">Read →</a>
+        <a href="https://medium.com/@mololuwaajayi7/how-to-set-up-two-factor-authentication-2fa-on-your-whatsapp-account-aa1c5cca29af" target="_blank" class="card-link">Read on Medium →</a>
       </div>
     </div>
 
     <div class="portfolio-card" data-cat="ux">
-      <div class="card-category">Newsletter · GeekHub</div>
+      <div class="card-category">Newsletter, GeekHub</div>
       <h3>The AI Fridge Just Spoke</h3>
-      <p>A fast-paced, witty newsletter edition breaking down the week's biggest tech shifts — from Samsung's AI-powered appliances to $44M wildfire-fighting startups — with clarity and career-minded insight.</p>
+      <p>A fast-paced, witty newsletter edition breaking down the week's biggest tech shifts, from Samsung's AI-powered appliances to a $44M wildfire-fighting startup, with clarity and career-minded insight throughout.</p>
       <div class="card-footer">
         <div class="card-tags"><span class="tag">Newsletter</span><span class="tag">AI</span></div>
-        <a href="https://open.substack.com/pub/geekhub/p/the-ai-fridge-just-spoke?utm_source=share&utm_medium=android&r=5ut7hk" target="_blank" class="card-link">Read →</a>
+        <a href="https://open.substack.com/pub/geekhub/p/the-ai-fridge-just-spoke?utm_source=share&utm_medium=android&r=5ut7hk" target="_blank" class="card-link">Read on Substack →</a>
       </div>
     </div>
 
     <div class="portfolio-card" data-cat="impact">
-      <div class="card-category">Social Impact · Essay</div>
-      <h3>Rooted in Tomorrow — A Climate Restoration Monologue</h3>
-      <p>A poetic, narrative-driven piece blending environmental advocacy with personal reflection. A call to restore the earth — and ourselves — before it's too late.</p>
+      <div class="card-category">Social Impact, Essay</div>
+      <h3>Rooted in Tomorrow, A Climate Restoration Monologue</h3>
+      <p>A poetic, narrative-driven piece blending environmental advocacy with personal reflection. A call to restore the earth and ourselves before it is too late.</p>
       <div class="card-footer">
         <div class="card-tags"><span class="tag">Climate</span><span class="tag">Advocacy</span></div>
-        <a href="https://medium.com/@mololuwaajayi7/rooted-in-tomorrow-984d4c5961c8" target="_blank" class="card-link">Read →</a>
+        <a href="https://medium.com/@mololuwaajayi7/rooted-in-tomorrow-984d4c5961c8" target="_blank" class="card-link">Read on Medium →</a>
       </div>
     </div>
 
     <div class="portfolio-card" data-cat="impact">
-      <div class="card-category">Social Impact · Memoir</div>
+      <div class="card-category">Social Impact, Memoir</div>
       <h3>When the Mangoes Were Enough</h3>
-      <p>A personal memoir of growing up in scarcity — carrying ambition and hope, and choosing to see one's own story not as a limitation, but as something others might find courage in.</p>
+      <p>A personal memoir of growing up in scarcity, carrying ambition and hope, and choosing to see your own story not as a limitation but as something others might find courage in.</p>
       <div class="card-footer">
         <div class="card-tags"><span class="tag">Memoir</span><span class="tag">Nigeria</span></div>
-        <a href="https://medium.com/@mololuwaajayi7/when-the-mangoes-were-enough-532fdab70869" target="_blank" class="card-link">Read →</a>
+        <a href="https://medium.com/@mololuwaajayi7/when-the-mangoes-were-enough-532fdab70869" target="_blank" class="card-link">Read on Medium →</a>
       </div>
     </div>
 
   </div>
 </section>
 
+<!-- ARTICLE MODALS -->
+<div class="modal-overlay" id="modal-web3" onclick="closeModal(event,'web3')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModalBtn('web3')">✕</button>
+    <div class="modal-cat">Tech Essay, Featured</div>
+    <h2 class="modal-title">Africa's Next Digital Leap Might Be Built on Web3</h2>
+    <div class="modal-body">
+      <p>For decades, Africa has experienced technology differently from the rest of the world. Instead of slowly adopting innovations developed elsewhere, the continent often leapfrogs entire systems. Mobile money is a powerful example of this. While many countries relied on traditional banking infrastructure, Africa embraced mobile financial systems that transformed how millions of people send, receive, and store money.</p>
+      <p>Now another technological shift is beginning to attract serious attention: Web3.</p>
+      <p>Web3 represents a new generation of internet infrastructure built on decentralized technologies such as blockchain. Instead of data and digital ownership being controlled by centralized companies, Web3 systems distribute power across networks. For Africa, this model could be particularly meaningful.</p>
+      <p>Many young Africans already operate in a digital-first economy, freelancing online, building startups, creating content, and participating in global digital markets. Yet traditional systems often limit access to payments, ownership rights, and international financial tools. Decentralized technologies promise something genuinely different.</p>
+      <p>Imagine creators receiving direct payments from global audiences without relying on restrictive payment systems. Imagine developers building applications where users truly own their digital assets. Imagine transparent systems that reduce dependence on centralized intermediaries that have historically excluded African users.</p>
+      <p>Of course, Web3 is still evolving. The technology faces real challenges around usability, regulatory uncertainty, and the need for better education at every level. But every technological revolution begins with experimentation, and Africa has never waited for permission to innovate.</p>
+      <p>What matters most is not simply the technology itself, but the innovators who make it accessible. Across the continent, a new wave of builders, designers, and developers is translating complex blockchain systems into tools that everyday users can understand and trust.</p>
+      <p>If history has taught us anything, it is that Africa rarely adopts technology passively. It adapts it, reshapes it, and makes it solve problems no one else thought to address. Web3 may not just arrive in Africa. It may thrive here in ways the rest of the world did not anticipate.</p>
+    </div>
+    <div class="modal-tags"><span class="tag">Web3</span><span class="tag">Africa</span><span class="tag">Blockchain</span><span class="tag">Fintech</span></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-ai" onclick="closeModal(event,'ai')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModalBtn('ai')">✕</button>
+    <div class="modal-cat">Tech Essay</div>
+    <h2 class="modal-title">AI Is Not Replacing Humans. It Is Changing What It Means to Be One at Work.</h2>
+    <div class="modal-body">
+      <p>Every time a new technology appears, people panic. When machines entered factories, workers feared they would lose their jobs forever. When computers arrived in offices, people thought accountants and administrators would disappear. Today the fear has returned, and this time it is centred around artificial intelligence.</p>
+      <p>Tools like ChatGPT, Notion AI, and other intelligent systems can now write emails, summarize documents, generate ideas, and even produce code. For many people, it feels like machines are suddenly learning how to think. But something important is being misunderstood in all of this noise.</p>
+      <p>AI is not replacing humans. It is replacing tasks.</p>
+      <p>Throughout history, technology has always removed repetitive work from the human plate. Calculators replaced long arithmetic. Spreadsheets replaced hours of manual bookkeeping. Search engines replaced the need to dig through shelves of information. And yet people did not become useless. They became more valuable because they were freed to do the things machines could not.</p>
+      <p>The same shift is happening again right now. AI can write a draft, but humans give meaning to ideas. AI can generate information, but humans decide what actually matters. AI can produce content, but humans understand emotion, context, and trust in ways no algorithm can replicate.</p>
+      <p>In reality, AI is becoming something closer to a creative partner than a replacement. The people who will thrive in this new world are not those who fear the technology, but those who take the time to learn how to work alongside it.</p>
+      <p>Instead of asking "Will AI take my job?", the better question might be: "How can AI help me become better at what I already do?" Technology has never been about removing humans from the story. It has always been about expanding what humans are capable of doing next.</p>
+    </div>
+    <div class="modal-tags"><span class="tag">AI</span><span class="tag">Future of Work</span></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-startups" onclick="closeModal(event,'startups')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModalBtn('startups')">✕</button>
+    <div class="modal-cat">Tech Essay</div>
+    <h2 class="modal-title">Why Startups Often Change the World While Big Companies Move Slowly</h2>
+    <div class="modal-body">
+      <p>Most people assume the biggest companies build the biggest innovations. But history often tells a very different story.</p>
+      <p>Large organizations are powerful, but they are also careful. They have systems to protect, investors to satisfy, and structures that make rapid change genuinely difficult. Startups, on the other hand, live in a completely different reality. They start with almost nothing. No large budgets, no established reputation, sometimes not even a fully formed product. What they do have is something far more powerful: the freedom to experiment without fear.</p>
+      <p>Because startups are small, they can move faster. They test ideas quickly, adapt to feedback in real time, and rebuild products overnight if necessary. Failure is not just possible in a startup. It is part of the process, baked into the culture from day one.</p>
+      <p>This is why some of the most transformative technologies in modern life began as small uncertain experiments. Companies like Airbnb, Uber, and Stripe once started as half-formed ideas created by small teams trying to solve simple problems that frustrated them personally.</p>
+      <p>At the heart of every startup is one honest question: "What if there was a better way to do this?" Startups challenge the assumptions people have accepted for years without question. They look at everyday frustrations and ask whether technology could make those experiences easier, faster, or more accessible to people who have been left out.</p>
+      <p>Not every startup succeeds. In fact, most do not. But the ones that do often reshape entire industries and change how millions of people live their lives. And that is exactly why the world continues to pay close attention to small teams with very big ideas.</p>
+    </div>
+    <div class="modal-tags"><span class="tag">Startups</span><span class="tag">Innovation</span></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-people" onclick="closeModal(event,'people')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModalBtn('people')">✕</button>
+    <div class="modal-cat">Tech Essay</div>
+    <h2 class="modal-title">Technology Was Never Just About Machines. It Was Always About People.</h2>
+    <div class="modal-body">
+      <p>When people talk about technology, the conversation usually focuses on machines. Faster processors, smarter algorithms, more powerful software. But if you look closely at the history of every meaningful technological breakthrough, technology has never really been about machines at all. It has always, at its core, been about people.</p>
+      <p>The internet did not become powerful simply because computers could communicate with one another. It became powerful because it connected human beings across distance in ways that had never been possible before. A student in Lagos can now learn from a professor in Boston. A developer in Nairobi can collaborate with a startup in Berlin. A creator can share ideas with millions of people without needing a television network or a publishing company to validate them first.</p>
+      <p>The technology itself is almost invisible. What we actually see, feel, and remember are the connections it makes possible. Every major digital breakthrough, from social networks to online marketplaces, succeeds not because of technical complexity but because it solves a deeply human need. The need to communicate. The need to create. The need to belong. The need to build something meaningful with others.</p>
+      <p>As new technologies like artificial intelligence and decentralized platforms continue to evolve and reshape our world, the same principle will remain true. The best innovations will not simply make machines smarter. They will make human experiences richer, more connected, and more full of possibility.</p>
+      <p>And the companies that understand this truth deeply, not just as a marketing message but as a genuine design principle, will be the ones that shape the future of the digital world in ways that actually matter.</p>
+    </div>
+    <div class="modal-tags"><span class="tag">Technology</span><span class="tag">Humanity</span></div>
+  </div>
+</div>
+
 <section id="contact">
   <div class="contact-grid">
     <div class="contact-left">
       <div class="section-label">Get in Touch</div>
       <h2>Let's build<br>something <em>beautiful.</em></h2>
-      <p>Available for internships, freelance projects, and collaborations. If you need a writer who understands tech and knows how to make it feel human — I'd love to hear from you.</p>
+      <p>Available for internships, freelance projects, and collaborations. If you need a writer who understands tech and knows how to make it feel human, I would love to hear from you.</p>
       <div class="contact-links">
         <a href="mailto:mololuwajayi7@gmail.com" class="contact-link">
           <div class="contact-link-icon">✉</div>
           <div class="contact-link-text"><small>Email</small><span>mololuwajayi7@gmail.com</span></div>
         </a>
-        <a href="https://www.linkedin.com/in/ajayimololuwa" target="_blank" class="contact-link">
+        <a href="https://www.linkedin.com/in/ajayi-mololuwa" target="_blank" class="contact-link">
           <div class="contact-link-icon">in</div>
           <div class="contact-link-text"><small>LinkedIn</small><span>Ajayi Mololuwa</span></div>
         </a>
@@ -413,17 +500,20 @@ footer p { color: rgba(255,255,255,0.32); font-size: 0.78rem; }
     </div>
     <div class="contact-right">
       <h3>Send a message</h3>
-      <div class="form-group"><label>Your Name</label><input type="text" placeholder="Jane Smith"></div>
-      <div class="form-group"><label>Email Address</label><input type="email" placeholder="jane@company.com"></div>
-      <div class="form-group"><label>What do you need?</label><textarea placeholder="Tell me about your project, brief, or opportunity..."></textarea></div>
-      <button class="form-submit" onclick="handleSubmit()">Send Message →</button>
+      <form id="contactForm" action="https://formspree.io/f/mgonllqv" method="POST">
+        <div class="form-group"><label>Your Name</label><input type="text" name="name" placeholder="Jane Smith" required></div>
+        <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="jane@company.com" required></div>
+        <div class="form-group"><label>What do you need?</label><textarea name="message" placeholder="Tell me about your project, brief, or opportunity..." required></textarea></div>
+        <button type="submit" class="form-submit">Send Message →</button>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="footer-logo">Mololuwa Ajayi.</div>
-  <p>© 2026 · Tech Content Writer · Lagos, Nigeria</p>
+  <p>© 2026, Tech Content Writer, Lagos, Nigeria</p>
 </footer>
 
 <script>
@@ -435,12 +525,53 @@ function filterPortfolio(cat, btn) {
     else card.classList.add('hidden');
   });
 }
-function handleSubmit() {
-  const btn = document.querySelector('.form-submit');
-  btn.textContent = '✓ Message Sent!';
-  btn.style.background = '#7a8c6e';
-  setTimeout(() => { btn.textContent = 'Send Message →'; btn.style.background = ''; }, 3000);
+function openArticle(id) {
+  document.getElementById('modal-' + id).classList.add('open');
+  document.body.style.overflow = 'hidden';
 }
+function closeModalBtn(id) {
+  document.getElementById('modal-' + id).classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeModal(e, id) {
+  if (e.target === document.getElementById('modal-' + id)) closeModalBtn(id);
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay.open').forEach(m => {
+      m.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  }
+});
+const form = document.getElementById('contactForm');
+const msg = document.getElementById('formMsg');
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = form.querySelector('.form-submit');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      msg.textContent = '✓ Message sent! I will get back to you soon.';
+      msg.className = 'form-msg success';
+      form.reset();
+    } else {
+      msg.textContent = 'Something went wrong. Please email me directly.';
+      msg.className = 'form-msg error';
+    }
+  } catch {
+    msg.textContent = 'Something went wrong. Please email me directly.';
+    msg.className = 'form-msg error';
+  }
+  btn.textContent = 'Send Message →';
+  btn.disabled = false;
+});
 </script>
 </body>
 </html>
